@@ -1,0 +1,100 @@
+@charset "UTF-8";
+:root{
+--color1: #4b1139 ;
+--color2:  #3b4058 ;
+--color3:  #2a6e78 ;
+--color4: #7a907c ;
+--color5:  #c9b180 ;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: var(--color3);
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+
+    background-color: var(--color4);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-position: right center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+div{
+    
+   
+}
+section#login >div#imagem{
+    display: block;
+    height: 200px;
+    background: var(--color1) url("../imagens/segeletronca.jpg");
+    background-size: cover;
+    
+    
+}
+
+section#login > div#formulario{
+    display: block;
+    
+}
+
+section#login > div#formulario >h1{
+    color: var(--color5);
+    padding: 10px;
+    text-align: center;
+}
+
+section#login > div#formulario >p{
+    color: wheat;
+    padding: 5px;
+    text-align: justify;
+}
+
+.dados-form{
+    color: wheat;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 5px;
+   
+}
+.dados-form > label>.caixas-form{
+    margin-top: 3px;
+    margin-bottom: -6px;
+    width: 90%;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+form>input#_enviar{
+    display: block;
+    background-color: var(--color3);
+    width: 60%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+form>input#_enviar:hover{
+    background-color: var(--color2);
+}

@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estio/telas.css">
     <title>Formulario</title>
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="imagen">
-
+            <div id="imagem">
+                
             </div>
 
             <div id="formulario">
-                <h1>login</h1>
+                <h1>Login</h1>
                 <p>Seja Bem vindo(a) novamente. Faça login para poder acessar a sua conta</p>
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post">
+                    <div class="dados-form"></divclass>
+                        <label for="_email">
+                            Email <input class="caixas-form type="email" name="nome" id="_email">
+                        </label>
+                     </div>
+                    
+                    <div class="dados-form">
+                        <label for="_pass">
+                             Senha <input class="caixas-form" type="password" name="pass" id="_pass">
+                        </label>
+                    </div>
+                    <input type="submit" name="enviar" value="Enviar" id="_enviar">
+                </form>
             </div>
 
         </section>
